@@ -3,8 +3,92 @@ footer {
     height: 213px;
     background-color: #000;
     display: flex;
+    justify-content: center;
+}
+
+#footer_container{
+    width: 1200px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
 
+#location_title h2{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+}
+
+#location p{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 14px;  
+    margin-top: 10px;
+    color: #fff;
+}
+
+#location_title .line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  
+.line {
+    width: 45px;
+    border-top: 5px solid #fff;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_button {
+    width: 195px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.button_icon {
+    width: 50px;
+}
+
+#second_button img{
+    margin-left: 15px;
+}
+
+.contact_button span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_area {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.logo_area span {
+    color: #C0C0C0;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+#grey_area {
+    height: 10px;
+    background-color: #C0C0C0;
 }
 
