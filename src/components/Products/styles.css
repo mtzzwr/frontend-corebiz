@@ -11,3 +11,29 @@
     width: 95px;
     border-top: 5px solid #C0C0C0;
 }
+
+#products_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.product_card {
+    width: 216px;
+    height: 353px;
+    margin: 20px;
+}
+
+#product_image {
+    width: 216px;
+    height: 200px;
+    background-color: #ffffff;
+}
+
+#product_details {
+    width: 216px;
+    height: 153px;
+    background-color: #E6E8EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
