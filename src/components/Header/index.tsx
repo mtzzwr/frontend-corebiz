@@ -18,7 +18,7 @@ const Header = () => {
                     <span> Minha conta</span>
                     <div id="cart_container" className="d-flex flex-md-row align-items-center">
                     <img src={Cart} alt="Corebiz" width="18" height="18"/>
-                    <div id="cart_items">
+                    <div id="cart_items" className="d-flex flex-md-row justify-content-center align-items-center">
                         <span>2</span>
                     </div>
                 </div>

@@ -36,9 +36,6 @@
     border-radius: 14px;
     background-color: #F8475F;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #cart_items span {
