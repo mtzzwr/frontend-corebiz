@@ -25,6 +25,19 @@
     font-weight: 700;
 }
 
+.input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.error_msg {
+    font-size: 10px;
+    color: red;
+}
+
 #btn_send {
     width: 140px;
     height: 48px;
