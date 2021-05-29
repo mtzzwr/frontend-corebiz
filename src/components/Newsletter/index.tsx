@@ -13,7 +13,7 @@ const Newsletter = () => {
             <div id="newsletter_form">
                 <Input placeholder='Digite seu nome' />
                 <Input placeholder='Digite seu e-mail...' />
-                <input id="btn_send" type="button" value="Eu quero!" />
+                <button id="btn_send">Eu quero!</button>
             </div>
         </div>
     )
