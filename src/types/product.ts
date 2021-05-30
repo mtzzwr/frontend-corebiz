@@ -5,10 +5,10 @@ export type Product = {
     imageUrl: string,
     listPrice: number,
     price: number,
-    installments?: Installments[]
+    installments: Installments[]
 }
 
 export type Installments = {
     quantity: number,
-    value: number
+    value: any
 }

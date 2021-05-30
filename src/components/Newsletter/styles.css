@@ -80,3 +80,35 @@
     border: none;
     border-radius: 6px;
 }
+
+@media screen and (max-width: 600px) {
+    #newsletter_container {
+        height: 276px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #newsletter_container h4 {
+        font-size: 22px;
+    }
+    
+    #newsletter_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_send {
+        width: 288px;
+        height: 48px;
+        color: #fff;
+        margin: 6px;
+        background-color: #000;
+        border: none;
+        border-radius: 6px;
+    }
+}
