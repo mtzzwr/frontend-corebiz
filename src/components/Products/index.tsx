@@ -8,11 +8,19 @@ import { Carousel as Slider } from 'react-responsive-carousel'
 import Star from '../../assets/img/star.png'
 import OutlinedStar from '../../assets/img/outlined-star.png'
 import './styles.css'
+import ProductCard from '../ProductCard'
 
 const Products = (updateCart : any) => {
 
     const [products, setProducts] = useState<Product[]>()
-    let [shoppingCart, setShoppingCart] = useState(localStorage.getItem('@shopping_cart') || 0)
+    
+    const [cartQuantity, setCartQuantity] = useState<any>(0);
+
+    useEffect(() => {
+        if(typeof localStorage.getItem('@shopping_cart') === 'number'){
+            setCartQuantity(localStorage.getItem('@shopping_cart'))
+        }
+    }, [setCartQuantity])
 
     useEffect(() => {
         axios.get(`${BASE_URL}/products`)
@@ -56,36 +64,11 @@ const Products = (updateCart : any) => {
         )
     }
 
-    const addToCart = () => {
-        setShoppingCart(typeof shoppingCart === 'number' ? shoppingCart++ : 0)
-        localStorage.setItem('@shopping_cart', shoppingCart.toString())        
-    }
+
 
     return (
-        <div id="products_container" className="container">
-            <div id="products_title">
-                <h4>Mais Vendidos</h4>
-                <div className="line"></div>
-            </div>
-            <div id="products_list">
-                {products?.map((product) => (
-                    <div key={product.productId} className="product_card">
-                        <div id="product_image">
-                            <img src={product.imageUrl} alt="" />
-                        </div>
-                        <div id="product_details">
-                            <span id="product_name">{product.productName}</span>
-                            {getRating(product)}
-                            <span id="product_price">por {priceFormatted(product.price / 100)}</span>
-                            <span id="product_installments">{showInstallments(product)}</span>
-                            <button id="btn_buy" onClick={() => addToCart()}>
-                                Comprar
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
+        <>
+        </>
     )
 
 }

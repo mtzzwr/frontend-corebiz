@@ -3,9 +3,9 @@ import Menu from '../../assets/img/menu.png'
 import Account from '../../assets/img/account.png'
 import Cart from '../../assets/img/cart.png'
 import './styles.css'
+import { useEffect, useState } from 'react'
 
-const Header = () => {
-
+const Header = ({ quantity } : {quantity: number}) => {
     return (
         <div id="header" className="d-flex flex-md-row align-items-center p-3 px-md-4 mb-3">
             <div id="header__container" className="container">
@@ -26,7 +26,7 @@ const Header = () => {
                     <div id="cart_container" className="d-flex flex-md-row align-items-center">
                         <img src={Cart} alt="Corebiz" width="18" height="18"/>
                         <div id="cart_items" className="d-flex flex-md-row justify-content-center align-items-center">
-                            <span></span>
+                            <span>{quantity}</span>
                         </div>
                     </div>
                 </div>
