@@ -9,9 +9,10 @@ import Star from '../../assets/img/star.png'
 import OutlinedStar from '../../assets/img/outlined-star.png'
 import './styles.css'
 
-const Products = () => {
+const Products = (updateCart : any) => {
 
     const [products, setProducts] = useState<Product[]>()
+    let [shoppingCart, setShoppingCart] = useState(localStorage.getItem('@shopping_cart') || 0)
 
     useEffect(() => {
         axios.get(`${BASE_URL}/products`)
@@ -24,7 +25,7 @@ const Products = () => {
     const showInstallments = (product : Product) => {
         if(product.installments?.length === 0) return (<></>)
         return (
-            <p>{`ou em ${getQuantity(product)}x de R$ ${getValue(product)}`}</p>
+            <p>{`ou em ${getQuantity(product)}x de R$ ${priceFormatted(getValue(product) / 100)}`}</p>
         )
     }
 
@@ -33,7 +34,12 @@ const Products = () => {
     }
 
     const getValue = (product : Product) => {
-        return product.installments?.map(installment => installment.value)
+        let value = 0;
+        let valueList = product.installments?.map(installment => installment.value)
+        if(valueList.length === 1){
+            valueList.map(v => value = v)
+        }
+        return value
     }
 
     const getRating = (product : Product) => {
@@ -48,6 +54,11 @@ const Products = () => {
                 {rating.map(star => star ?  <img src={Star} alt="Rating" /> : <img src={OutlinedStar} alt="Rating" />)}
             </div>
         )
+    }
+
+    const addToCart = () => {
+        setShoppingCart(typeof shoppingCart === 'number' ? shoppingCart++ : 0)
+        localStorage.setItem('@shopping_cart', shoppingCart.toString())        
     }
 
     return (
@@ -67,7 +78,7 @@ const Products = () => {
                             {getRating(product)}
                             <span id="product_price">por {priceFormatted(product.price / 100)}</span>
                             <span id="product_installments">{showInstallments(product)}</span>
-                            <button id="btn_buy">
+                            <button id="btn_buy" onClick={() => addToCart()}>
                                 Comprar
                             </button>
                         </div>

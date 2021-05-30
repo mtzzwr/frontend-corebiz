@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Carousel from "../../components/Carousel"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
@@ -6,11 +7,17 @@ import Products from "../../components/Products"
 
 const Home = () => {
 
-    return (
+    const [cartQuantity, setCartQuantity] = useState<number>(0);
+
+    const updateCart = (value : number) => {
+        setCartQuantity(value);
+    }
+
+    return ( 
         <>
             <Header/>
             <Carousel/>
-            <Products/>
+            <Products updateCart={updateCart}/>
             <Newsletter/>
             <Footer/>
         </>

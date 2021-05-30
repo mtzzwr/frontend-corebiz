@@ -6,17 +6,23 @@ import './styles.css'
 const Carousel = () => {
     return (
         <>
-            <Slider className="carousel" showArrows={false} showThumbs={false} showStatus={false}>
+            <div className="banner_background">
+                <div className="banner_text">
+                    <p>Olá, o que você está buscando?</p>
+                    <h1>Criar ou migrar seu e-commerce?</h1>
+                </div>
+            </div>
+            {/* <Slider className="carousel" showArrows={false} showThumbs={false} showStatus={false}>
                 <div className="carousel_item">
-                    {/* <img className="carousel_image" src={Banner} /> */}
+                    <img className="carousel_image" src={Banner} /> 
                 </div>
                 <div className="carousel_item">
-                    {/* <img className="carousel_image" src={Banner} /> */}
+                    <img className="carousel_image" src={Banner} />
                 </div>
                 <div className="carousel_item">
-                    {/* <img className="carousel_image" src={Banner} /> */}
+                    <img className="carousel_image" src={Banner} />
                 </div>
-            </Slider>
+            </Slider> */}
         </>
     )
 }

@@ -1,13 +1,59 @@
-.carousel {
+.banner_background {
     width: 100%;
-    height: 430px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
 }
 
-.carousel_item  {
-    background-image: url('../../assets/img/full-banner.png');
-    background-repeat: no-repeat;
-    background-size: 100% 430px;
-    width: 100%;
-    height: 430px;
+.banner_text {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_text p h1{
+    max-width: 600px;
+    margin: 0 0 5px;
+}
+
+.banner_text p{
+    font-size: 24px;
+    font-weight:700;
+}
+
+.banner_text h1{
+    font-size: 40px;
+    font-weight:900;
+    line-height: 40px;;
+}
+
+@media(min-width:1000px){
+    .banner_background {
+        background-image: url('../../assets/img/header.png');
+        height: 430px;
+    }
+}
+
+@media(min-width:800px) and (max-width: 1000px){
+    .banner_background {
+        background-image: url('../../assets/img/back-banner.png');
+        height: 330px;
+    }
+    .banner_text{
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+@media(max-width:800px){
+    .banner_background {
+        background-image: url('../../assets/img/back-banner.png');
+        height: 230px;
+    }
+    .banner_text{
+        background-color: rgba(0,0,0,0.5);
+    }
 }
 
