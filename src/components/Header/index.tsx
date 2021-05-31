@@ -3,7 +3,6 @@ import Menu from '../../assets/img/menu.png'
 import Account from '../../assets/img/account.png'
 import Cart from '../../assets/img/cart.png'
 import './styles.css'
-import { useEffect, useState } from 'react'
 
 const Header = ({ quantity } : {quantity: number}) => {
     return (

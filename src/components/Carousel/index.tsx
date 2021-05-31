@@ -1,6 +1,4 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel as Slider } from 'react-responsive-carousel'
-import Banner from '../../assets/img/full-banner.png'
 import './styles.css'
 
 const Carousel = () => {

@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media(min-width:1200px){
+@media(min-width:1000px){
     #products_list {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -76,9 +76,40 @@
     }
 }
 
-@media(min-width: 800px) and (max-width:1200px){
+@media(min-width: 800px) and (max-width:1000px){
     #products_list{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product_card {
+        width: 100%;
+        height: 320px;
+        margin: 5px;
+    }
+
+    #product_image {
+        width: 100%;
+        height: 180px;
+        background-color: #ffffff;
+    }
+
+    #product_image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #product_details {
+        width: 100%;
+        height: 153px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn_buy {
+        width: 90%;
+        height: 32px;
+        margin: 8px;
     }
 }
 
