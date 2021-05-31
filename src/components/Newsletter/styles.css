@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+#newsletter_text h4 {
+    font-family: 'Nunito';
+}
+
 #newsletter_form {
     display: flex;
     flex-direction: row;
@@ -18,7 +22,6 @@
 #newsletter_form input {
     width: 280px;
     height: 48px;
-    margin-bottom: 14px;
     border: none;
     border-radius: 6px;
     padding: 10px;
@@ -107,6 +110,7 @@
 
     .input_container {
         width: 100%;
+        margin-bottom: 10px;
     }
     
     #newsletter_form {

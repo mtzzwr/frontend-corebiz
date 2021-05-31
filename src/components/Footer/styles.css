@@ -19,6 +19,7 @@ footer {
     font-size: 20px;
     line-height: 27px;
     color: #fff;
+    font-family: 'Nunito';
 }
 
 .location p{
@@ -27,6 +28,7 @@ footer {
     line-height: 14px;  
     margin-top: 10px;
     color: #fff;
+    font-family: 'Nunito';
 }
 
 .location_title .line {

@@ -55,7 +55,7 @@ const ProductCard = (props: any) => {
     }
 
     return (
-        <div key={props.product.productName} className="product_card">
+        <div className="product_card">
             {
                 props.product.listPrice !== null &&
                 <div id="off_image">

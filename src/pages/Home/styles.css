@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Nunito', 'Roboto', 'Oxygen',
-    sans-serif;
-}
-
 #products_container {
     width: 100%;
     height: auto;
@@ -14,7 +6,11 @@ body {
 #products_title {
     height: 50px;
     margin-top: 20px;
-    font-family: 'Nunito', sans-serif;
+}
+
+#products_title h4 {
+    font-family: 'Nunito';
+    font-weight: 800;
 }
 
 .line {

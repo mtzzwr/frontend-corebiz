@@ -12,8 +12,8 @@
 }
 
 #header_logo img {
-    width: 181px;
-    height: 41px;
+    width: 161px;
+    height: 36px;
 }
 
 #header_container {
@@ -55,15 +55,16 @@
 }
 
 #cart_items {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     border-radius: 14px;
     background-color: #F8475F;
     text-align: center;
+    margin-left: 8px;
 }
 
 #cart_items span {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bold;
     color: #fff;
 }

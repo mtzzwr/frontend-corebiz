@@ -11,17 +11,20 @@
 #product_name {
     font-size: 12px;
     color: #7A7A7A;
+    font-family: 'Nunito';
 }
 
 #product_price {
     font-size: 18px;
     color: #000000;
-    font-weight: bold;
+    font-family: 'Nunito';
+    font-weight: 900;
 }
 
 #product_installments {
     font-size: 11px;
     color: #7A7A7A;
+    font-family: 'Nunito';
 }
 
 .product_card:hover {
