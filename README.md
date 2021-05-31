@@ -19,6 +19,6 @@ Desenvolver uma página baseando-se no layout e APIs abaixo.
 ## Instruções para rodar o teste
 
 - Fazer o download do zip do projeto ou clonar o projeto com o comando `git clone https://github.com/mtzzwr/frontend-corebiz.git`
-- Após ter feito o download/clone do projeto, será necessário instalar as dependências do projeto rodando o comando `npm install` ou `yarn`
-- Com as dependências do projetos instaladas, basta rodar `yarn start`
+- Após ter feito o download/clone do projeto, será necessário instalar as dependências do projeto rodando o comando `npm install` ou `yarn install`
+- Com as dependências do projetos instaladas, basta rodar `yarn start` ou `npm start`
 
