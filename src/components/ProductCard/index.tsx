@@ -2,11 +2,13 @@ import { Product } from '../../types/product'
 import { priceFormatted } from '../../utils/format'
 import Star from '../../assets/img/star.png'
 import OutlinedStar from '../../assets/img/outlined-star.png'
+import Off from '../../assets/img/off.png'
+import './styles.css'
 
 const ProductCard = (props: any) => {
 
     const showInstallments = (product: Product) => {
-        if (product.installments?.length === 0) return (<></>)
+        if (product.installments?.length === 0) return (<p></p>)
         return (
             <p>{`ou em ${getQuantity(product)}x de R$ ${priceFormatted(getValue(product) / 100)}`}</p>
         )
@@ -53,7 +55,13 @@ const ProductCard = (props: any) => {
     }
 
     return (
-        <div key={props.product.productId} className="product_card">
+        <div key={props.product.productName} className="product_card">
+            {
+                props.product.listPrice !== null &&
+                <div id="off_image">
+                    <img src={Off} alt="" />
+                </div>
+            }
             <div id="product_image">
                 <img src={props.product.imageUrl} alt="" />
             </div>

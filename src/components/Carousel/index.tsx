@@ -12,17 +12,6 @@ const Carousel = () => {
                     <h1>Criar ou migrar seu e-commerce?</h1>
                 </div>
             </div>
-            {/* <Slider className="carousel" showArrows={false} showThumbs={false} showStatus={false}>
-                <div className="carousel_item">
-                    <img className="carousel_image" src={Banner} /> 
-                </div>
-                <div className="carousel_item">
-                    <img className="carousel_image" src={Banner} />
-                </div>
-                <div className="carousel_item">
-                    <img className="carousel_image" src={Banner} />
-                </div>
-            </Slider> */}
         </>
     )
 }

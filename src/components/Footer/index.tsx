@@ -8,9 +8,9 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div id="footer_container">
-                    <div id="location">
-                        <div id="location_title">
+                <div className="footer_container">
+                    <div className="location">
+                        <div className="location_title">
                             <h2>Localização</h2>
                             <div className="line"></div>
                         </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <p>brasil@corebiz.ag</p>
                         <p>+55 11 3090 1039</p>
                     </div>
-                    <div id="contact">
+                    <div className="contact">
                         <button className="contact_button">
                             <div className="button_icon">
                                 <img src={EmailIcon} alt="" width="16" height="13"/>
@@ -27,13 +27,13 @@ const Footer = () => {
                             <span>ENTRE EM CONTATO</span>
                         </button>
                         <button className="contact_button">
-                            <div id="second_button" className="button_icon">
+                            <div className="button_icon second_button">
                                 <img src={HeadphoneIcon} alt="" width="15" height="18"/>
                             </div>
                             <span>FALE COM O NOSSO CONSULTOR ONLINE</span>
                         </button>
                     </div>
-                    <div id="logos">
+                    <div className="logos">
                         <div className="logo_area">
                             <span>Created by</span>
                             <img src={LogoWhite} alt="" width="71" height="18"/>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div id="grey_area">
+            <div className="grey_area">
 
             </div>
         </>

@@ -60,9 +60,11 @@ const Newsletter = () => {
             ) : (
                 <>
                     <div id="newsletter_container">
-                        <h4>
-                            Participe de nossas news com promoções e novidades!
-                        </h4>
+                        <div id="newsletter_text">
+                            <h4>
+                                Participe de nossas news com promoções e novidades!
+                            </h4>
+                        </div>
                         <div id="newsletter_form">
                             <div className="input_container">
                                 <input className={errorName ? 'input_error' : ''} type="text" onChange={(name_digitted) => {

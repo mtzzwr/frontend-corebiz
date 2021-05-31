@@ -5,10 +5,9 @@ import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import Newsletter from "../../components/Newsletter"
 import ProductCard from "../../components/ProductCard"
-import Products from "../../components/Products"
 import { Product } from "../../types/product"
 import { BASE_URL } from "../../utils/requests"
-import '../../components/Products/styles.css'
+import './styles.css'
 
 const Home = () => {
     const [products, setProducts] = useState<Product[]>()

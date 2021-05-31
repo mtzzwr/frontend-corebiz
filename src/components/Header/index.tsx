@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react'
 
 const Header = ({ quantity } : {quantity: number}) => {
     return (
-        <div id="header" className="d-flex flex-md-row align-items-center p-3 px-md-4 mb-3">
-            <div id="header__container" className="container">
+        <div id="header">
+            <div id="header_container">
                 <div id="menu">
                     <img src={Menu} alt="Corebiz" width="22" height="15"/>
                 </div>
@@ -30,6 +30,9 @@ const Header = ({ quantity } : {quantity: number}) => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="input_container_mobile">              
+                <input id="input_search" type="text" placeholder="O que está procurando?"/>
             </div>
         </div>
     )

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', 'Roboto', 'Oxygen',
+    sans-serif;
+}
+
+#products_container {
+    width: 100%;
+    height: auto;
+}
+
+#products_title {
+    height: 50px;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.line {
+    width: 95px;
+    border-top: solid 5px #C0C0C0;
+}
+
+#products_list {
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+@media(min-width:1200px){
+    #products_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(min-width: 800px) and (max-width:1200px){
+    #products_list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media(max-width: 800px){
+    .line {
+        width: 40px;
+    }
+
+    #products_list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
